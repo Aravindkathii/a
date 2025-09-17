@@ -1,0 +1,119 @@
+/* Root Theme Colors */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #222;
+    --accent-color: #007acc;
+    --card-bg: #ffffff;
+    --skill-bg: #e0e0e0;
+    --download-bg: #007acc;
+    --download-color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.tagline {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-inline li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.1em;
+}
+
+/* Skills */
+.skills li {
+    display: inline-block;
+    background: var(--skill-bg);
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* Projects */
+.project {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+/* Contact */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Resume Download */
+.download-btn {
+    display: inline-block;
+    background: var(--download-bg);
+    color: var(--download-color);
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background: #005fa3;
+}
+
+
